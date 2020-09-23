@@ -1,0 +1,38 @@
+    body {
+      color: aliceblue;
+      background-image: url("https://www.tmf-group.com/-/media/images/corporate-site/background-images/generic-website-imagery/covid19/covid-1500x900.jpg");
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .content {
+      max-width: 500px;
+      margin: auto;
+      }
+    div.chart-container {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.774);
+    }
+    h1 {
+      text-align: center;
+      }
+    h2 {
+      text-align: center;
+      }
+    h5 {
+      text-align: center;
+      }
+    p {
+      text-align: center;
+      }
+    select {
+      text-align: center;
+      }
+    iframe {
+      display:block;
+      margin:auto}
+    select {
+      display: block;
+      margin: 0 auto;
+    }

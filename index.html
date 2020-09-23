@@ -1,65 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
     <title>COVID DATA</title>
   </head>
-  <style>
-    body {
-      color: aliceblue;
-      background-image: url("https://www.tmf-group.com/-/media/images/corporate-site/background-images/generic-website-imagery/covid19/covid-1500x900.jpg");
-      background-size: cover;
-    }
-    .content {
-      max-width: 500px;
-      margin: auto;
-      
-    }
-    div.chart-container {
-    position: relative; 
-    background-color: rgba(255, 255, 255, 0.342);}
-    h1 {text-align: center;}
-    h2 {text-align: center;}
-    h5 {text-align: center;}
-    p {text-align: center;}
-    select {text-align: center;}
-    iframe {
-      display:block;
-      margin:auto}
-    select {
-    display: block;
-    margin: 0 auto;
-    }
-    </style>
+  <link rel="stylesheet" type="text/css" href="design.css">
   <body>
     <div class="content">
     <h1>DATOS COVID ARGENTINA</h1>
-    <h2>DATOS HISTORICOS</h2>
+    <h2><p>DATOS HISTORICOS</p></h2>
     <iframe src="https://covid-19.dataflowkit.com/assets/widget/c19-widget-dark.html" 
-    frameborder="0" scrolling="no"
-    width="400" height="250">
+     frameborder="0" scrolling="no" width="400" height="250">
     </iframe>
     <h2>DATOS DEL DIA</h2>
     <div class="controls">
       <h5 class="label"><p>Tipo de Gráfico</p></h5>
       <select name="chartType" id="chartType" onchange="fetchData(value)">
-        <option value="line">Linea</option>
+        <option value="pie">Torta</option>
         <option value="bar">Barra</option>
         <option value="radar">Radar</option>
         <option value="polarArea">Área polar</option>
         <option value="doughnut">Dona</option>
       </select>
+      <p></p>
     </div>
     <div class="chart-container">
       <canvas id="myChart"></canvas>
-    </div>    
+    </div>   
+    <h5><p>Alumno: Agustin Franchetti</p><p>Legajo: 42567</p></h5>
   </div>
 	</div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
@@ -69,5 +40,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </div>
   </body>
-
 </html>
