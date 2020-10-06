@@ -1,3 +1,2 @@
 # docker-covid
-
-Web dockerizada con un registro diario de covid de Argentina
+docker container run --detach --publish 8080:80 --name covidar agustinfranchetti/covidar:2.0
